@@ -4,13 +4,13 @@ import Footer from './components/Layouts/Footer';
 import Header from './components/Layouts/Header';
 
 function App() {
-  var show;
+  
   return (
     <div className="App">
       <Header />
-      <Content show:/>
+      <Content />
       <Footer />
-      {show ? <div className='w-screen h-screen background'></div> : <></>}
+      {/* {show ? <div className='w-screen h-screen background'></div> : <></>} */}
     </div>
   );
 }

@@ -11,7 +11,7 @@ export default function Footer() {
                 </div>
                 <p className='font-bold text-base text-indigo-500'>Política de Privacidade</p>
             </div>
-            <div className='footer bg-blue-700 p-6'>
+            <div className='footer bg-blue-700 p-6 m_md:hidden'>
                 <div className='flex justify-center items-center'>
                     <img className='w-24 h-5' src='./assets/Combined Shape.png' alt='' />
                     <p className='text-white'>online</p>
