@@ -31,10 +31,6 @@
     left: 50%;
 }
 
-.content {
-    height: calc(100vh - 276px);
-}
-
 .search {
     top: 2.54%;
     left: 2.28%;
