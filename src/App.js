@@ -6,11 +6,10 @@ import Header from './components/Layouts/Header';
 function App() {
   
   return (
-    <div className="App">
+    <div className="App relative">
       <Header />
       <Content />
       <Footer />
-      {/* {show ? <div className='w-screen h-screen background'></div> : <></>} */}
     </div>
   );
 }
