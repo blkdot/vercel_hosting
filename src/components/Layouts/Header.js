@@ -11,8 +11,8 @@ export default function Header() {
                         <p className='mb-[4.42px] bg-[#32C5FF] rounded-[10px]'></p>
                     </div>
                     <div className='logo flex'>
-                        <img src='./assets/Combined Shape.png' alt='' />
-                        <span className='text-blue-400'>online</span>
+                        <img className='object-contain mt-1' src='./assets/Combined Shape.png' alt='' />
+                        <span className='text-[23px] text-[#32C5FF]'>online</span>
                     </div>
                 </div>
                 <div className="right flex items-center">
@@ -20,32 +20,32 @@ export default function Header() {
                         <ul className='flex'>
                             <li className='flex mr-5 items-center'>
                                 <img className='w-3 h-3' src='./assets/Shape (1).png' alt='' />
-                                <p className='text not-italic text-base leading-5 text-blue-400 ml-2 lg:hidden'>Home</p>
+                                <p className='text not-italic text-base leading-5 text-[#47CBFF] ml-2 lg:hidden'>Home</p>
                             </li>
                             <li className='flex mr-5 items-center'>
                                 <img className='w-3 h-3' src='./assets/Subtract.png' alt='' />
-                                <p className='text not-italic text-base leading-5 text-blue-400 ml-2 lg:hidden'>Sobre</p>
+                                <p className='text not-italic text-base leading-5 text-[#47CBFF] ml-2 lg:hidden'>Sobre</p>
                             </li>
                             <li className='flex mr-5 items-center'>
                                 <img className='w-3 h-3' src='./assets/Union.png' alt='' />
-                                <p className='text not-italic text-base leading-5 text-blue-400 ml-2 lg:hidden'>Comunidade</p>
+                                <p className='text not-italic text-base leading-5 text-[#47CBFF] ml-2 lg:hidden'>Comunidade</p>
                             </li>
                             <li className='flex mr-5 items-center'>
                                 <img className='w-3 h-3' src='./assets/Combined Shape1.png' alt='' />
-                                <p className='text not-italic text-base leading-5 text-blue-400 ml-2 lg:hidden'>Trinamento</p>
+                                <p className='text not-italic text-base leading-5 text-[#47CBFF] ml-2 lg:hidden'>Trinamento</p>
                             </li>
                             <li className='flex items-center'>
                                 <img className='w-3 h-3' src='./assets/Icon (Stroke).png' alt='' />
-                                <p className='text not-italic text-base leading-5 text-blue-400 ml-2 lg:hidden'>Marketplace</p>
+                                <p className='text not-italic text-base leading-5 text-[#47CBFF] ml-2 lg:hidden'>Marketplace</p>
                             </li>
                         </ul>
                     </div>
                     <div className='flex'>
-                        <div className='login flex flex-row justify-end items-center pr-3 pl-3 bg-green-600 rounded mr-4 pt-3 pb-3'>
+                        <div className='login flex flex-row justify-end items-center pr-3 pl-3 bg-[#66AE3E] rounded mr-4 pt-3 pb-3'>
                             <img src='./assets/Icon.png' alt='' />
                             <p className='text-white ml-2'>Login</p>
                         </div>
-                        <div className='signup flex flex-row justify-end items-center pr-3 pl-3 bg-green-600 rounded pt-3 pb-3'>
+                        <div className='signup flex flex-row justify-end items-center pr-3 pl-3 bg-[#66AE3E] rounded pt-3 pb-3'>
                             <img src='./assets/Icon (1).png' alt='' />
                             <p className='text-white ml-2'>Signup</p>
                         </div>
@@ -105,7 +105,7 @@ export default function Header() {
                         <img className='w-10 sm:w-[27.22px] h-10 sm:h-[27.22px]' src='./assets/Shape.png' alt='' />
                         <p className='font-[700] text-[56px] md:text-[37px] leading-9 flex items-center text-center text-white ml-4 sm:ml-[8.2px]'>145.933</p>
                     </div>
-                    <p className='flex justify-center font-medium text-[24px] sm:text-[18px] leading-[35px] sm:leading-[23px] sm:mt-3 flex items-center text-center text-blue-400'>Maior Plataforma de Fotógrafos no Brasil e no Mundo</p>
+                    <p className='flex justify-center font-medium text-[24px] sm:text-[18px] leading-[35px] sm:leading-[23px] sm:mt-3 flex items-center text-center text-[#53D6FF]'>Maior Plataforma de Fotógrafos no Brasil e no Mundo</p>
                 </div>
             </div>
         </div>

@@ -72,7 +72,7 @@
 .section {
     bottom: 2.54%;
     left: 2.28%;
-    width: 357px;
+    outline: 8px solid rgba(120, 168, 240, 0.1);
 }
 
 .footer {
@@ -80,7 +80,7 @@
 }
 
 .card {
-    width: 324px;
+    min-width: 324px;
     top: 10%;
     left: 50%;
     box-shadow: 0px 9px 30px rgba(0, 0, 0, 0.13);

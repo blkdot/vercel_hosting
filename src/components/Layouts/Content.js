@@ -19,24 +19,24 @@ export default function Content(props) {
                     tabIndex="0"
                 />
                 <div className='absolute bg-white rounded search pt-5 pr-6 pb-6 pl-6 md:hidden'>
-                    <p className='font-bold text-xl leading-7 text-gray-900'>Busque Fotógrafos</p>
+                    <p className='font-bold text-xl leading-7 text-[#2D2D2D]'>Busque Fotógrafos</p>
                     <div className='mt-5'>
-                        <div className='bg-gray-100 relative border-solid border-2 border-gray-300 rounded flex w-64 mb-4'>
-                            <input className='bg-gray-100 pl-3 text-base leading-10 flex items-center text-gray-700 outline-0' type="text" placeholder='Fotógrafia de...'></input>
+                        <div className='bg-[#F6F6F6] relative border-solid border-[1.5px] border-[#E1E1E1] rounded flex w-64 mb-4'>
+                            <input className='bg-[#F6F6F6] pl-3 text-base leading-[39px] flex items-center text-[#6C6C6C] outline-0' type="text" placeholder='Fotógrafia de...'></input>
                             <img className='icon absolute' src='./assets/Combined Shape.svg' alt='' />
                         </div>
-                        <div className='bg-gray-100 relative border-solid border-2 border-gray-300 rounded flex w-64 mb-4'>
+                        <div className='bg-[#F6F6F6] relative border-solid border-[1.5px] border-[#E1E1E1] rounded flex w-64 mb-4'>
                             <img className='object-contain pl-3' src='./assets/search.png' alt='' />
-                            <input className='bg-gray-100 pl-3 text-base leading-10 flex items-center text-gray-700 outline-0' type="text" placeholder='Palavra chave (opicional)'></input>
+                            <input className='bg-[#F6F6F6] pl-3 text-base leading-[39px] flex items-center text-[#6C6C6C] outline-0' type="text" placeholder='Palavra chave (opicional)'></input>
                             <img className='icon absolute' src='./assets/Combined Shape.svg' alt='' />
                         </div>
-                        <div className='bg-gray-100 relative border-solid border-2 border-gray-300 rounded flex w-64 mb-4'>
-                            <input className='bg-gray-100 pl-3 text-base leading-10 flex items-center text-gray-700 outline-0' type="text" placeholder='Digite sua localização'></input>
+                        <div className='bg-[#F6F6F6] relative border-solid border-[1.5px] border-[#E1E1E1] rounded flex w-64 mb-4'>
+                            <input className='bg-[#F6F6F6] pl-3 text-base leading-[39px] flex items-center text-[#6C6C6C] outline-0' type="text" placeholder='Digite sua localização'></input>
                             <img className='icon absolute' src='./assets/Shape.svg' alt='' />
                         </div>
-                        <div className='bg-blue-600 rounded flex p-4 justify-center items-center'>
+                        <div className='bg-[#3669CC] rounded flex p-4 justify-center items-center'>
                             <img src='./assets/search1.png' alt='' />
-                            <div className='bg-blue-600 text-white font-bold text-base ml-2'>Buscar</div>
+                            <div className='bg-[#3669CC] text-white font-bold text-base ml-2'>Buscar</div>
                         </div>
                     </div>
                 </div>
@@ -44,17 +44,17 @@ export default function Content(props) {
                     <div className='relative'>
                         <img src='./assets/image/Rectangle 42.png' alt='' />
                         <div className='pt-9 pb-10'>
-                            <p className='text-lg font-bold leading-6 text-gray-900 text-center'>JB Bianca Fotos</p>
-                            <p className='text-base leading-6 text-center text-blue-600 font-medium'>Casamentos</p>
+                            <p className='text-lg font-[700] leading-6 text-[#212121] text-center'>JB Bianca Fotos</p>
+                            <p className='text-base leading-[23px] text-center text-[#1D56DB] font-medium'>Casamentos</p>
                             <div className='flex justify-center mt-4 mb-7'>
                                 <img src='./assets/Mapa.png' alt='' />
                                 <img className='ml-2 mr-1' src='./assets/site.png' alt='' />
                                 <img className='ml-1 mr-2' src='./assets/instagram.png' alt='' />
                                 <img src='./assets/fb.png' alt='' />
                             </div>
-                            <div className='width ml-auto mr-auto bg-blue-600 rounded pt-3 pr-4 pb-3 pl-4 flex items-center'>
+                            <div className='width ml-auto mr-auto bg-[#3669CC] rounded pt-[14px] pr-[15px] pb-[14px] pl-[15px] flex items-center'>
                                 <img className='object-contain mr-2' src='./assets/Icon (Stroke)1.png' alt='' />
-                                <p className='text-white'>Solicitar Orçamento</p>
+                                <p className='text-white font-[700]'>Solicitar Orçamento</p>
                             </div>
                         </div>
                         <img className='absolute icon1' src='./assets/Frame 210.png' alt='' />
@@ -64,21 +64,21 @@ export default function Content(props) {
                     <img src='./assets/search.png' alt='' />
                 </div>
                 <div className='absolute location bg-white rounded-[150px] pt-3 pr-5 pb-3 pl-5 flex justify-center items-center'>
-                    <p className='mr-3 text-base leading-5 text-right text-blue-900 md:hidden'>Visualização</p>
+                    <p className='mr-3 text-base leading-5 text-right text-[#23365A] md:hidden'>Visualização</p>
                     <div className='mr-3'>
-                        <p className='w-4 h-1 bg-gray-400 rounded'></p>
-                        <p className='w-4 h-1 bg-gray-400 mt-0.5 mb-0.5 rounded'></p>
-                        <p className='w-4 h-1 bg-gray-400 rounded'></p>
+                        <p className='w-4 h-1 bg-[#D8D8D8] rounded'></p>
+                        <p className='w-4 h-1 bg-[#D8D8D8] mt-0.5 mb-0.5 rounded'></p>
+                        <p className='w-4 h-1 bg-[#D8D8D8] rounded'></p>
                     </div>
                     <img className='mr-3' src='./assets/Union (1).png' alt='' />
                     <img src='./assets/Shape (2).png' alt='' />
                 </div>
-                <div className='absolute section bg-white border-2 border-gray-400 rounded-[200px] flex pt-2 pl-2 pb-2 justify-center items-center'>
+                <div className='absolute section bg-white border-2 border-[#B4C1DE] rounded-[200px] flex pt-[7px] pl-[7.5px] pb-[7px] justify-center items-center'>
                     <img src='./assets/Group 30.png' alt='' />
-                    <div className='ml-5 mr-12'>
-                        <p className='text-xl font-bold leading-6 text-gray-900'>Fábio de Osasco, SP</p>
-                        <p className='text-base leading-6 text-gray-700 font-medium'>Acabou de ser adicionado!</p>
-                        <p className='text-xs leading-6 font-medium text-gray-600'>a 2 min  |  <span className='text-blue-600'>Fotógrafos Online</span></p>
+                    <div className='ml-[19.26px] mr-12'>
+                        <p className='text-xl font-[700] leading-6 text-[#212121]'>Fábio de Osasco, SP</p>
+                        <p className='text-base leading-[23px] text-[#555555] font-[450]'>Acabou de ser adicionado!</p>
+                        <p className='text-[13px] leading-[23px] font-[500] text-[#898989]'>a 2 min  |  <span className='text-[#3669CC]'>Fotógrafos Online</span></p>
                     </div>
                 </div>
             </div>
