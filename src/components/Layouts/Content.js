@@ -3,10 +3,7 @@ import './style.css';
 
 export default function Content(props) {
     const [show, setShow] = useState(false);
-
-    const Show = () => {
-        document.getElementsByClassName('search').style.display = "block";
-    }
+    const [model, setModel] = useState(false);
 
     return (
         <>
@@ -43,7 +40,7 @@ export default function Content(props) {
                         </div>
                     </div>
                 </div>
-                <div className='absolute card bg-white rounded border-2 border-[#6C83B7]'>
+                <div className='absolute card bg-white rounded border-2 border-[#6C83B7] cursor-pointer' onClick={() => setModel(true)}>
                     <div className='relative'>
                         <img src='./assets/image/Rectangle 42.png' alt='' />
                         <div className='pt-9 pb-10'>
@@ -116,6 +113,73 @@ export default function Content(props) {
                     </div>
                 </>
                 : <></>}
+            {model
+                ?
+                <>
+                    <div className='absolute top-0 left-0 w-full h-full background' onClick={() => setModel(false)}></div>
+                    <div className='absolute pt-9 md:pt-[33px] pr-10 md:pr-[23px] pb-[39px] md:pb-[31px] pl-[38px] md:pl-6 bg-white model rounded-[5px] min-w-[350px]'>
+                        <div className='relative'>
+                            <div className='flex md:flex-col md:items-center'>
+                                <img className='md:w-[53px]' src='./assets/Frame 210.svg' alt='' />
+                                <div className='ml-[14px] text-[22px] lg:text-[18px] md:text-[17px] md:ml-0 md:mt-[9px] md:text-center'>
+                                    <p>
+                                        Consultar Orçamento e Disponibilidade <br />
+                                        <b>JB Bianca Fotos</b>
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='flex items-center mt-[18.41px] mb-[27.59px] md:justify-center'>
+                                <img src='./assets/Icon.svg' alt='' />
+                                <p className='text-base leading-5 text-[#999999] ml-2'>Responde em menos de 2hrs</p>
+                            </div>
+                            <div>
+                                <div className='mb-[15px] cursor-pointer flex bg-[#F6F6F6] rounded-[5px] pt-[14.37px] pb-[14.63px] pl-[14.5px] border-[1.5px] border-[#E1E1E1] hover:bg-white hover:border-[1.5px] hover:border-[#646464]'>
+                                    <img src='./assets/Union.svg' alt='' />
+                                    <input className='w-full bg-transparent ml-[9.98px] outline-0 hover:bg-white' type="text" placeholder='Name' />
+                                </div>
+                                <div className='mb-[15px] cursor-pointer flex bg-[#F6F6F6] rounded-[5px] pt-[14.37px] pb-[14.63px] pl-[14.5px] border-[1.5px] border-[#E1E1E1] hover:bg-white hover:border-[1.5px] hover:border-[#646464]'>
+                                    <img src='./assets/Icon (Stroke).svg' alt='' />
+                                    <input className='w-full bg-transparent ml-[9.98px] outline-0 hover:bg-white' type="text" placeholder='Email' />
+                                </div>
+                                <div className='flex lg:flex-col'>
+                                    <div className='mr-[15.16px] w-1/2 lg:w-full mb-[15px] cursor-pointer flex bg-[#F6F6F6] rounded-[5px] pt-[14.37px] pb-[14.63px] pl-[14.5px] border-[1.5px] border-[#E1E1E1] hover:bg-white hover:border-[1.5px] hover:border-[#646464]'>
+                                        <img src='./assets/calendar.svg' alt='' />
+                                        <input className='w-full bg-transparent ml-[9.98px] outline-0 hover:bg-white' type="text" placeholder='Data do Evento' />
+                                    </div>
+                                    <div className='flex w-1/2 lg:w-full mb-[15px] cursor-pointer flex bg-[#F6F6F6] rounded-[5px] border-[1.5px] border-[#E1E1E1] hover:bg-white hover:border-[1.5px] hover:border-[#646464]'>
+                                        <div className='flex items-center border-r-[1.5px] border-[#E1E1E1]'>
+                                            <p className='ml-[13.25px] mr-[7.22px] text-[#6C6C6C]'>+1</p>
+                                            <img className='mr-[18.12px]' src='./assets/Combined Shape.svg' alt='' />
+                                        </div>
+                                        <div className='flex pt-[14.37px] pb-[14.63px] pl-[14.5px]'>
+                                            <img src='./assets/Icon (1).svg' alt='' />
+                                            <input className='w-full bg-transparent ml-[9.98px] outline-0 hover:bg-white' type="text" placeholder='(DDD) Telefone' />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='relative mb-[15px] cursor-pointer flex bg-[#F6F6F6] rounded-[5px] pt-[10px] pb-[10px] pl-[14.5px] border-[1.5px] border-[#E1E1E1] hover:bg-white hover:border-[1.5px] hover:border-[#646464]'>
+                                    <div className='flex'>
+                                        <img src='./assets/Shape1.svg' alt='' />
+                                        <input className='w-full bg-transparent ml-[9.98px] outline-0 hover:bg-white' type="text" placeholder='Selecione tipo de serviço' />
+                                    </div>
+                                    <img className='absolute top-5 right-[18.17px]' src='./assets/Combined Shape.svg' alt='' />
+                                </div>
+                                <textarea className='pr-12 h-[114px] w-full bg-[#F6F6F6] pl-4 pt-2 outline-0 hover:bg-white rounded-[5px] border-[1.5px] border-[#E1E1E1] hover:border-[1.5px] hover:border-[#646464]' type="text" placeholder='Olá, gostaria de mais informações sobre...' />
+                            </div>
+                            <div className='flex mt-[29.67px] justify-end items-center md:flex-col-reverse'>
+                                <p className='text-[#1D56DB] leading-[23px] font-medium md:w-full md:text-center'>Cancelar</p>
+                                <div className='flex bg-[#3669CC] rounded ml-[22.94px] md:ml-0 pt-[14px] md:w-full md:justify-center md:mb-[14.45px] pr-5 pb-[14px] pl-5'>
+                                    <img className='object-contain mr-2' src='./assets/Icon (Stroke)1.png' alt='' />
+                                    <p className='text-white text-base font-[700]'>Enviar Solicitação</p>
+                                </div>
+                            </div>
+                            <img className='absolute -top-[20px] -right-[25px] md:-right-[10px] hover:cursor-pointer' src='./assets/close.png' alt='' onClick={() => setModel(false)} />
+                        </div>
+                    </div>
+                </>
+                : <></>
+            }
+
         </>
     )
 }

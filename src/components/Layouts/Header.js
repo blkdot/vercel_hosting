@@ -78,8 +78,8 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className='relative'>
-                <div className='flex'>
+            <div className='relative min-h-[171px] overflow-x-hidden'>
+                <div className='flex min-h-[85px] image_row'>
                     <img className='w-full1' src='./assets/image/Rectangle 43.png' alt='' />
                     <img className='w-full1' src='./assets/image/Rectangle 44.png' alt='' />
                     <img className='w-full1' src='./assets/image/Rectangle 45.png' alt='' />
@@ -89,7 +89,7 @@ export default function Header() {
                     <img className='w-full1' src='./assets/image/Rectangle 49.png' alt='' />
                     <img className='w-full1' src='./assets/image/Rectangle 50.png' alt='' />
                 </div>
-                <div className='flex'>
+                <div className='flex min-h-[85px] image_row'>
                     <img className='w-full1' src='./assets/image/Rectangle 51.png' alt='' />
                     <img className='w-full1' src='./assets/image/Rectangle 52.png' alt='' />
                     <img className='w-full1' src='./assets/image/Rectangle 53.png' alt='' />
@@ -101,11 +101,11 @@ export default function Header() {
                 </div>
                 <div className='header-images absolute w-full h-full top-0 left-0'></div>
                 <div className='absolute header-text'>
-                    <div className='flex justify-center items-center'>
-                        <img className='w-10 h-10' src='./assets/Shape.png' alt='' />
-                        <p className='font-bold text-5xl leading-9 flex items-center text-center text-white ml-4'>145.933</p>
+                    <div className='flex justify-center items-center mb-[10.3px]'>
+                        <img className='w-10 sm:w-[27.22px] h-10 sm:h-[27.22px]' src='./assets/Shape.png' alt='' />
+                        <p className='font-[700] text-[56px] md:text-[37px] leading-9 flex items-center text-center text-white ml-4 sm:ml-[8.2px]'>145.933</p>
                     </div>
-                    <p className='font-medium text-2xl leading-9 flex items-center text-center text-blue-400'>Maior Plataforma de Fotógrafos no Brasil e no Mundo</p>
+                    <p className='flex justify-center font-medium text-[24px] sm:text-[18px] leading-[35px] sm:leading-[23px] sm:mt-3 flex items-center text-center text-blue-400'>Maior Plataforma de Fotógrafos no Brasil e no Mundo</p>
                 </div>
             </div>
         </div>
